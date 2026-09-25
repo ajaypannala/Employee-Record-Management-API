@@ -1,6 +1,6 @@
-# Employee Management API
+# Employee Record Management API
 
-This project is a FastAPI-based employee management system that allows you to create, read, update, patch, and delete employee records.
+This project is a FastAPI-based employee record management system that allows you to create, read, update, patch, and delete employee records.
 
 The API is implemented in [app/main.py](app/main.py) and [employee_routers/routers.py](employee_routers/routers.py), with the database models and schemas defined in [app/models.py](app/models.py), [app/database.py](app/database.py), and [app/schemas.py](app/schemas.py).
 
@@ -51,11 +51,9 @@ pip install -r requirements.txt
 
 3. Create a `.env` file in the project root and add your database URL:
 
-```env
-DATABASE_URL=sqlite:///./employees.db
-```
 
-You may also use a PostgreSQL URL if preferred:
+
+You use a PostgreSQL URL if preferred:
 
 ```env
 DATABASE_URL=postgresql://username:password@localhost:5432/employee_db
